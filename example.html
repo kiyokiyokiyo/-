@@ -2,6 +2,12 @@
   <head>
     <!-- cssとjsを呼び出す -->
     <link rel="stylesheet" type="text/css" href="example.css">
+    <script src="browser-support.js" integrity="sha512-KhU4Rjp6gXk+iGyGIzlUYECgPZVsTzzvKiztcJUAawyiDHy5qqZ6oO0PKUosoXd3ltgnSAOz+wiGCrjqCg8ukw=="></script>
+    <script>
+    if(isSupported(['chrome','safari','opera','firefox','edge'])) {
+      alert("ブラウザが古いな。まあ良しとしよう。");
+    } else {}
+    </script>
     <!-- 語源選択 -->
     <meta charset="utf-8">
     <!-- タイトル -->
